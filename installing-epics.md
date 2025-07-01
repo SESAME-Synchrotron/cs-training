@@ -17,7 +17,6 @@ The traditional way to install EPICS is by compiling from sources. While the spe
 * Download, configure and install Support Modules
 * Create your IOC Application
 
- 
 # Homework - Installing EPICS on Rocky Linux
 1. Install the following packages: `make`, `gcc-c++` and `readline-devel`
 2. Create folder `epics` in your home directory.
@@ -31,6 +30,8 @@ g++ --version
 ```linux
 wget https://epics-controls.org/download/base/base-7.0.9.tar.gz
 ```
+**BONUS**: Clone EPICS base version 7.0.9 from GitHub https://github.com/epics-base/epics-base 
+
 5. Extract the archive under `~/epics`
 6. Build the sources
 ```
@@ -43,7 +44,14 @@ export EPICS_BASE=${HOME}/epics/base-7.0.9
 export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch)
 export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}
 ```
+8. Source `~/.bashrc` and execute the following commands
+```
+caget
+caput
+camonitor
+softIoc
+```
 
-Submit the output:
-* Subject: HW1 - Preparing Linux - [NAME]
-* Body: Output from step #3
+**Submit the output**:
+- Subject: HW1 - Preparing Linux - [NAME]
+- Body: Output from steps #3 and #8
