@@ -44,13 +44,14 @@ export EPICS_BASE=${HOME}/epics/base-7.0.9
 export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch)
 export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}
 ```
-8. Source `~/.bashrc` and execute the following commands
+8. Source `~/.bashrc`, execute the following commands
 ```
 caget
 caput
 camonitor
 softIoc
 ```
+And print the value of `EPICS_HOST_ARCH`
 
 **Submit the output**:
 - Subject: HW1 - Preparing Linux - [NAME]
