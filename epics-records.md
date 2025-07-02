@@ -156,3 +156,32 @@ This section describes fields found in many EPICS output record types, which gen
     *   **SDLY**: Specifies a **delay (in seconds)** for asynchronous processing in simulation mode. A positive value delays between processing phases; a negative value (default) indicates synchronous processing.
     *   **SSCN**: Specifies the **SCAN mechanism to be used in simulation mode**. This is particularly useful for 'I/O Intr' scanned records, which would otherwise not be scanned in simulation mode.
     *   While in simulation mode, output values (in engineering units) are written to `SIOL` instead of `OUT`. However, these output values are **never converted**. Also, **no calls to device support** occur during record processing.
+
+## Commonly Used Records
+There are many record types supplied with the EPICS base, here are some of the most commonly used ones:
+* Analog input (ai)
+* Analog output (ao)
+* Long input (longin)
+* Long output (longout)
+* Multi-Bit Binary Input Record (mbbi)
+* Multi-Bit Binary Output Record (mbbo)
+* Binary-in (bi)
+* Binary-out (bo)
+
+## Homework - Using Records
+Create an IOC that contains the following PVs:
+* Voltage
+* Current
+* Temperature
+* Power State (ON/OFF)
+* Temperature State (Cool, Normal, Hot)
+
+Then implement the following calculations:
+* Calculate the power from voltage and current.
+* Calculate temperature in Fahrenheit and Kelvin
+* Set the power state to ON if the power is > 1 watt.
+* Set the temperature state (Cool < 22, Normal < 30, Hot > 30)
+
+Submit output:
+* Subject: HW3 - Using Records - [NAME]
+* Body: Output of get and put operations showing the calculations' logic is correct.
