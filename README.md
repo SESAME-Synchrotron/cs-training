@@ -2,7 +2,7 @@
 This repo contains training materials on various topics related to our work in the control group, composed as Markdown files and listed in order:
 * [Linux](./linux/Linux.md)
 * [Git Version Control](./git/git.md)
-* C/C++
+* [C/C++](./c_cpp/c_cpp.md)
 * EPICS
   1. [Introduction](./epics/introduction.md)
   2. [Installing EPICS](./epics/installation.md)
