@@ -33,3 +33,13 @@ To build an IOC, run `make` in the top directory. Once finished, the following t
 * `dbd/`: Database definitions, files containing declaration to what IOC component are available during runtime.
 * `lib/<arch>/`: Shared libraries when creating a support module.
 * `include/`: Header files generated from compiling support modules.
+
+## Homework - Running the IOC
+1. Compile the IOC by running `make` in the top directory.
+2. Run the IOC by passing the st.cmd to the IOC executable.
+
+**Submit the output**
+* Subject: HW2 - Running the IOC - [NAME]
+* Body: The output from running the IOC.
+
+
