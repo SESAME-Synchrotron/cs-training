@@ -184,12 +184,10 @@ Master these essentials—they're the foundation of everything:
 2. **Install & Play**
 
    ```bash
-   sudo dnf install ninvaders    # Install ninvaders
-   ninvaders                     # Arrow keys to play; Ctrl+C to exit
+   sudo dnf install cowsay  # Install cowsay
+   cowsay "HELLO WORLD"     # Print a cow saying "HELLO WORLD"
+   cowsay -l                # List different "cows"  
    ```
-
-
-
 
 ## 2. Structure of a Command
 
